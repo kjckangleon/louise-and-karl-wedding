@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { WEDDING_DATE, GROOM_FIRST_NAME, BRIDE_FIRST_NAME } from '../constants';
 import { SaveTheDateButton } from './SaveTheDateButton';
@@ -52,7 +51,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/1920/1080?grayscale&blur=2')` }}>
+    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/pw/AP1GczM5rmEaDSUPxbJ_rVn_0NzQYkCww5r4fpFzLY0RNeHprx5QWVCNAmK3KQ6xJsLCkr7JB5TROn1OLqRODalzxBYQ1KUqFKLBisvbw8vDLsm3Ni512pYErOC8rQJ7uG1ss3x0dcpXG_FDLqgaNq-AmeFe3w=w2266-h1295-s-no-gm')` }}>
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10 p-6">
         <h2 className="text-lg md:text-2xl font-light tracking-widest uppercase">
