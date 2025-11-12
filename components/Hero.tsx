@@ -1,7 +1,21 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { WEDDING_DATE, GROOM_FIRST_NAME, BRIDE_FIRST_NAME } from '../constants';
 import { SaveTheDateButton } from './SaveTheDateButton';
+
+const calculateDaysLeft = () => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const weddingDay = new Date(WEDDING_DATE);
+  weddingDay.setHours(0, 0, 0, 0);
+  
+  const differenceInTime = weddingDay.getTime() - today.getTime();
+  
+  const differenceInDays = Math.ceil(differenceInTime / (1000 * 3600 * 24));
+  
+  return differenceInDays;
+};
 
 export const Hero: React.FC = () => {
   const dateString = WEDDING_DATE.toLocaleDateString('en-US', {
@@ -9,6 +23,33 @@ export const Hero: React.FC = () => {
     month: 'long',
     day: 'numeric',
   });
+
+  const [daysLeft, setDaysLeft] = useState(calculateDaysLeft());
+
+  useEffect(() => {
+    // Update once an hour to catch day change
+    const timer = setInterval(() => {
+      setDaysLeft(calculateDaysLeft());
+    }, 1000 * 60 * 60); 
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const renderCountdown = () => {
+    if (daysLeft > 0) {
+      return (
+        <p className="text-lg md:text-xl font-light mt-4">
+          {daysLeft} {daysLeft === 1 ? 'day' : 'days'} to go before the wedding
+        </p>
+      );
+    }
+  
+    if (daysLeft === 0) {
+      return <p className="text-lg md:text-xl font-light mt-4">Today is the day!</p>;
+    }
+    
+    return null; // Don't show anything if wedding has passed
+  };
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://picsum.photos/1920/1080?grayscale&blur=2')` }}>
@@ -23,6 +64,7 @@ export const Hero: React.FC = () => {
         <p className="text-xl md:text-3xl font-semibold tracking-wider border-y-2 border-white/50 py-3 my-6">
           {dateString}
         </p>
+        {renderCountdown()}
         <SaveTheDateButton />
       </div>
     </section>
