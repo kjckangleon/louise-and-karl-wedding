@@ -21,7 +21,7 @@ const getLastName = (name: string): string => name.split(' ').pop() || name;
 
 export const EntourageSection: React.FC = () => {
   return (
-    <section id="entourage" className="py-20 md:py-28">
+    <section id="entourage" className="py-20 md:py-28 bg-[#F5F1EE]">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-serif mb-16 text-[#6D4C41]">Wedding Entourage</h2>
         

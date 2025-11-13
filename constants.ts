@@ -11,6 +11,7 @@ export const SECTIONS = [
   { id: 'event-details', title: 'The Day' },
   { id: 'dress-code', title: 'Attire' },
   { id: 'gift-registry', title: 'Gift Registry' },
+  { id: 'rsvp', title: 'RSVP' },
   { id: 'entourage', title: 'Entourage' },
 ];
 

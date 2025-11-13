@@ -6,6 +6,7 @@ import { CoupleSection } from './components/CoupleSection';
 import { EventDetailsSection } from './components/EventDetailsSection';
 import { DressCodeSection } from './components/DressCodeSection';
 import { GiftRegistrySection } from './components/GiftRegistrySection';
+import { RSVPSection } from './components/RSVPSection';
 import { EntourageSection } from './components/EntourageSection';
 import { Footer } from './components/Footer';
 
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <EventDetailsSection />
         <DressCodeSection />
         <GiftRegistrySection />
+        <RSVPSection />
         <EntourageSection />
       </main>
       <Footer />
