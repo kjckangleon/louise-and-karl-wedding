@@ -26,20 +26,13 @@ const RSVPForm: React.FC = () => {
 
     const data = new FormData();
     
-    // User-visible fields
+    // Send only the user-visible fields, as the hidden validation fields were causing errors.
     data.append("entry.1498135098", form.name);
     data.append("entry.44151106", form.email);
     data.append("entry.180535622", form.contact);
-    data.append("entry.1953483038", form.attending);
-    data.append("entry.2606285", form.allergies);
-    data.append("entry.623019881", form.message);
-
-    // Hidden fields required by Google Forms for validation
-    data.append("entry.623019881_sentinel", ""); // Sentinel for the message field
-    data.append("fvv", "1"); // Form version/validation
-    data.append("pageHistory", "0"); // For multi-page forms
-    data.append("fbzx", "1439236761442233314"); // The crucial FBZX token
-    data.append("submissionTimestamp", String(Date.now())); // The dynamic submission timestamp
+    data.append("entry.623019881", form.attending);
+    data.append("entry.1953483038", form.allergies);
+    data.append("entry.2606285", form.message);
 
     try {
       await fetch(formUrl, {
