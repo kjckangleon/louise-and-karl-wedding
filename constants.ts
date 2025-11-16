@@ -27,7 +27,7 @@ export const PARENTS = {
 export const PRINCIPAL_SPONSORS = {
   male: [
     "Lilio F. Kangleon",
-    "Dr Rolex Omega",
+    "Dr. Rolex Omega",
     "Florencio Espantaleon",
     "Victor Cabral",
     "Javier Laping",
@@ -50,7 +50,7 @@ export const PRINCIPAL_SPONSORS = {
 export const SECONDARY_SPONSORS = {
   cord: ["Marvin Lemuel Jumoad", "Venus Jumoad"],
   veil: ["William Orosio", "Gina Orosio"],
-  candle: ["Yasmin Sydney K. Cutara", "Gibi Cutara"]
+  candle: ["Yasmeen Sydney K. Cutara", "Raphael Gabriel Y. Cutara"]
 };
 
 export const BEST_WOMAN = "Jannielou Kangleon";

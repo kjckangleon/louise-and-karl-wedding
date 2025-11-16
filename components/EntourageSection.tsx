@@ -14,7 +14,7 @@ import {
  } from '../constants';
 
 const addSponsorPrefix = (name: string, isMale: boolean): string => {
-    if (name.startsWith('Dr ')) return name;
+    if (name.startsWith('Dr. ')) return name;
     return isMale ? `Mr. ${name}` : `Ms. ${name}`;
 };
 
@@ -123,7 +123,6 @@ export const EntourageSection: React.FC = () => {
                             <p className="font-semibold text-lg text-gray-800">{CEREMONIAL_ROLES.arrhae}</p>
                             <p className="text-gray-500">Arrhae Bearer</p>
                         </div>
-                        {/* Fix: Removed Bible Bearer section as CEREMONIAL_ROLES.bible is not defined in constants.ts and was causing a build error. */}
                     </div>
                 </div>
                  <div>
