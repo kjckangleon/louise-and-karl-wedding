@@ -125,10 +125,20 @@ const RSVPForm: React.FC = () => {
 
       <button
         type="submit"
-        className="w-full bg-[#F0B429] hover:bg-[#D4A225] text-[#6D4C41] font-semibold py-3 rounded-lg transition-transform transform hover:scale-105 duration-300 disabled:opacity-50 disabled:scale-100"
-        disabled={status === "loading"}
+        className={`w-full font-semibold py-3 rounded-lg transition-all duration-300 transform
+          ${status === 'success' 
+              ? 'bg-green-500 text-white scale-105' 
+              : 'bg-[#F0B429] hover:bg-[#D4A225] text-[#6D4C41] hover:scale-105'
+          } 
+          ${status === 'loading' ? 'scale-100' : ''}
+          disabled:opacity-75 disabled:cursor-not-allowed`}
+        disabled={status === "loading" || status === "success"}
       >
-        {status === "loading" ? "Submitting..." : "Submit RSVP"}
+        {status === 'loading'
+          ? 'Submitting...'
+          : status === 'success'
+          ? 'Submitted ✓'
+          : 'Submit RSVP'}
       </button>
 
       <div className="min-h-[68px]">

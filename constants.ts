@@ -1,8 +1,6 @@
-import { Person } from './types';
-
 export const WEDDING_DATE = new Date('2026-02-06T14:30:00');
 export const GROOM_NAME = 'Karl Joseph C. Kangleon';
-export const BRIDE_NAME = 'Louise Jane Lucero';
+export const BRIDE_NAME = 'Louise Jane A. Lucero';
 export const GROOM_FIRST_NAME = 'Karl';
 export const BRIDE_FIRST_NAME = 'Louise';
 
@@ -17,7 +15,7 @@ export const SECTIONS = [
 
 export const PARENTS = {
   groom: {
-    father: "Carlo F. Kangleon",
+    father: "Lou F. Kangleon",
     mother: "Janet C. Kangleon"
   },
   bride: {
@@ -28,7 +26,7 @@ export const PARENTS = {
 
 export const PRINCIPAL_SPONSORS = {
   male: [
-    "Amay Kangleon",
+    "Lilio F. Kangleon",
     "Dr Rolex Omega",
     "Florencio Espantaleon",
     "Victor Cabral",
@@ -38,8 +36,8 @@ export const PRINCIPAL_SPONSORS = {
     "Jude Escario"
   ],
   female: [
-    "Yanyan Kangleon",
-    "Cristy Obico",
+    "Mary Ann K. Espina",
+    "Christina M. Obico ",
     "Elena A. Espantaleon",
     "Ma Emma Cabral",
     "Imelda Laping",
@@ -51,21 +49,21 @@ export const PRINCIPAL_SPONSORS = {
 
 export const SECONDARY_SPONSORS = {
   cord: ["Marvin Lemuel Jumoad", "Venus Jumoad"],
-  veil: ["Shalimar Amante", "Jesse Amante"],
-  candle: ["Yasmin Cutara", "Gibi Cutara"]
+  veil: ["William Orosio", "Gina Orosio"],
+  candle: ["Yasmin Sydney K. Cutara", "Gibi Cutara"]
 };
 
 export const BEST_WOMAN = "Jannielou Kangleon";
 export const MAN_OF_HONOR = "Christian Ralph Lucero";
 
 export const GROOMSMEN = [
-  "Emmanuel Cabral",
-  "Paulo Espantaleon",
-  "Merthon Arante",
-  "James Arante",
-  "Rv Lague",
-  "Yuri Kangleon",
-  "Emmanuel Kangleon"
+  "Victor Emmanuel Cabral",
+  "Paulo Anthony Espantaleon",
+  "Merthon Monico Arante",
+  "James Joseph Arante",
+  "Roselle Victor Lague",
+  "Yuri Daniel John Montecillo",
+  "Emmanuel Mark Kangleon"
 ];
 
 export const BRIDESMAIDS = [
@@ -74,15 +72,15 @@ export const BRIDESMAIDS = [
   "Cyrel Magno",
   "Sienna Gabronino",
   "Cherry Arabejo",
-  "Joanna Barrios"
+  "Joanna Barrios",
+  "Carl Dabon"
 ];
 
 export const CEREMONIAL_ROLES = {
-  rings: "Zaijan Lucero",
-  arrhae: "Caleb Amante",
-  bible: "Carl Dabon"
+  rings: "Zaijan A. Lucero",
+  arrhae: "Caleb Iñaki K. Amante",
 };
 
 export const OFFERTORY = {
-  breadAndWine: ["William Orosio", "Gina Orosio"]
+  breadAndWine: ["Jesse Rey E. Amante", "Shalimar Ann K. Amante"]
 };

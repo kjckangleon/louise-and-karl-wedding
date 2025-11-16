@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { 
     PARENTS,
@@ -20,6 +21,11 @@ const addSponsorPrefix = (name: string, isMale: boolean): string => {
 const getLastName = (name: string): string => name.split(' ').pop() || name;
 
 export const EntourageSection: React.FC = () => {
+  const attendantsOfHonor = [
+    ...GROOMSMEN.map(name => ({ name, role: 'Groomsman' })),
+    ...BRIDESMAIDS.map(name => ({ name, role: 'Bridesmaid' })),
+  ];
+
   return (
     <section id="entourage" className="py-20 md:py-28 bg-[#F5F1EE]">
       <div className="container mx-auto px-6 text-center">
@@ -77,37 +83,29 @@ export const EntourageSection: React.FC = () => {
             </div>
         </div>
 
-        {/* Wedding Party */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 max-w-5xl mx-auto border-t border-gray-200 pt-16 mb-16">
-            <div className="text-center">
-                <h3 className="text-2xl font-serif text-gray-700 mb-6">The Groom's Party</h3>
-                <div className="space-y-3">
-                    <div>
-                        <p className="font-semibold text-lg text-gray-800">{BEST_WOMAN}</p>
-                        <p className="text-gray-500">Best Woman</p>
-                    </div>
-                    {GROOMSMEN.map((name, index) => (
-                        <div key={index}>
-                            <p className="font-semibold text-lg text-gray-800">{name}</p>
-                            <p className="text-gray-500">Groomsman</p>
-                        </div>
-                    ))}
+        {/* Attendants section */}
+        <div className="max-w-4xl mx-auto border-t border-gray-200 pt-16 mb-16">
+            {/* Best Woman & Man of Honor */}
+            <div className="mb-12 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                    <p className="font-semibold text-xl text-gray-800">{BEST_WOMAN}</p>
+                    <p className="text-gray-500 text-lg">Best Woman</p>
+                </div>
+                <div>
+                    <p className="font-semibold text-xl text-gray-800">{MAN_OF_HONOR}</p>
+                    <p className="text-gray-500 text-lg">Man of Honor</p>
                 </div>
             </div>
-            <div className="text-center">
-                <h3 className="text-2xl font-serif text-gray-700 mb-6">The Bride's Party</h3>
-                <div className="space-y-3">
-                    <div>
-                        <p className="font-semibold text-lg text-gray-800">{MAN_OF_HONOR}</p>
-                        <p className="text-gray-500">Man of Honor</p>
+
+            {/* Attendants of Honor */}
+            <h3 className="text-3xl font-serif text-gray-800 mb-8">Attendants of Honor</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-6">
+                {attendantsOfHonor.map((person, index) => (
+                    <div key={index}>
+                        <p className="font-semibold text-lg text-gray-800">{person.name}</p>
+                        <p className="text-gray-500">{person.role}</p>
                     </div>
-                    {BRIDESMAIDS.map((name, index) => (
-                        <div key={index}>
-                            <p className="font-semibold text-lg text-gray-800">{name}</p>
-                            <p className="text-gray-500">Bridesmaid</p>
-                        </div>
-                    ))}
-                </div>
+                ))}
             </div>
         </div>
 
@@ -125,10 +123,7 @@ export const EntourageSection: React.FC = () => {
                             <p className="font-semibold text-lg text-gray-800">{CEREMONIAL_ROLES.arrhae}</p>
                             <p className="text-gray-500">Arrhae Bearer</p>
                         </div>
-                        <div>
-                            <p className="font-semibold text-lg text-gray-800">{CEREMONIAL_ROLES.bible}</p>
-                            <p className="text-gray-500">Bible Bearer</p>
-                        </div>
+                        {/* Fix: Removed Bible Bearer section as CEREMONIAL_ROLES.bible is not defined in constants.ts and was causing a build error. */}
                     </div>
                 </div>
                  <div>
