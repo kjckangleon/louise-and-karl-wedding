@@ -133,6 +133,11 @@ export const EntourageSection: React.FC = () => {
                             <p className="text-gray-600 text-md">{OFFERTORY.breadAndWine.join(' & ')}</p>
                              <p className="text-gray-500 text-lg mt-1">Bread & Wine</p>
                         </div>
+                        <div>
+                            <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(OFFERTORY.candle[0])}</p>
+                            <p className="text-gray-600 text-md">{OFFERTORY.candle.join(' & ')}</p>
+                             <p className="text-gray-500 text-lg mt-1">Candle</p>
+                        </div>
                     </div>
                 </div>
             </div>

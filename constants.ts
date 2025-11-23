@@ -27,53 +27,53 @@ export const PARENTS = {
 export const PRINCIPAL_SPONSORS = {
   male: [
     "Lilio F. Kangleon",
-    "Dr. Rolex Omega",
-    "Florencio Espantaleon",
-    "Victor Cabral",
-    "Javier Laping",
-    "Lemuel Canizares",
-    "Jules Gelig",
-    "Jude Escario"
+    "Dr. Rolex C. Omega",
+    "Florencio T. Espantaleon",
+    "Victor G. Cabral",
+    "Javier I. Laping",
+    "Marvin Lemuel V. Jumoad",
+    "Julian Jr. D. Gelig",
+    "Jude Clint Escario"
   ],
   female: [
-    "Mary Ann K. Espina",
-    "Christina M. Obico ",
+    "Maryann K. Espina",
+    "Christina M. Obico",
     "Elena A. Espantaleon",
-    "Ma Emma Cabral",
-    "Imelda Laping",
-    "Matet Canizares",
-    "Jenice Palero - Gelig",
-    "Jinkee Escario"
+    "Ma. Emma A. Cabral",
+    "Imelda P. Laping",
+    "Venus M. Jumoad",
+    "Jenice P. Gelig",
+    "Maribel Tan-Escario"
   ]
 };
 
 export const SECONDARY_SPONSORS = {
-  cord: ["Marvin Lemuel Jumoad", "Venus Jumoad"],
-  veil: ["William Orosio", "Gina Orosio"],
+  cord: ["Marites L. Cañizares", "Lemuel S. Cañizares"],
+  veil: ["William M. Orosio", "Gina G. Orosio"],
   candle: ["Yasmeen Sydney K. Cutara", "Raphael Gabriel Y. Cutara"]
 };
 
-export const BEST_WOMAN = "Jannielou Kangleon";
-export const MAN_OF_HONOR = "Christian Ralph Lucero";
+export const BEST_WOMAN = "Jannielou C. Kangleon";
+export const MAN_OF_HONOR = "Christian Ralph A. Lucero";
 
 export const GROOMSMEN = [
-  "Victor Emmanuel Cabral",
-  "Paulo Anthony Espantaleon",
-  "Merthon Monico Arante",
-  "James Joseph Arante",
-  "Roselle Victor Lague",
-  "Yuri Daniel John Montecillo",
+  "Victor Emmanuel A. Cabral",
+  "Paulo Anthony A. Espantaleon",
+  "Merthon Monico C. Arante",
+  "James Joseph C. Arante",
+  "Roselle Victor C. Lague",
+  "Paul Benedict I. Jabines",
   "Emmanuel Mark Kangleon"
 ];
 
 export const BRIDESMAIDS = [
-  "Oyen De Rama",
-  "Dianne Belista",
-  "Cyrel Magno",
-  "Sienna Gabronino",
-  "Cherry Arabejo",
-  "Joanna Barrios",
-  "Carl Dabon"
+  "Monna Lorraine S. De Rama",
+  "Dianne Faye B. Belista",
+  "Ma. Cyrel C. Magno",
+  "Sienna April B. Gabronino",
+  "Cherry A. Arabejo",
+  "Joanna June A. Barrios",
+  "Carl L. Dabon"
 ];
 
 export const CEREMONIAL_ROLES = {
@@ -82,5 +82,6 @@ export const CEREMONIAL_ROLES = {
 };
 
 export const OFFERTORY = {
-  breadAndWine: ["Jesse Rey E. Amante", "Shalimar Ann K. Amante"]
+  breadAndWine: ["Jesse Rey E. Amante", "Shalimar Ann K. Amante"],
+  candle: ["Lou Rheilyn L. Songahid","Patrick A. Songahid"]
 };
