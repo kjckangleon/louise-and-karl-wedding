@@ -45,7 +45,7 @@ export const EventDetailsSection: React.FC = () => {
                         time="5:30 PM onwards"
                         address="Salinas Drive, Lahug, Cebu City, 6000 Cebu"
                         mapLink="https://www.google.com/maps/search/?api=1&query=Waterfront+Cebu+City+Hotel+%26+Casino"
-                        imageUrl="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/525761355_1156772416487621_503573556847970316_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGF5Um2kxbvYTz2YBtQmViCvAoxSSFKKDO8CjFJIUooM4L92Kr3lHr6U5TqIhHjPQU&_nc_ohc=9PxkAGIFLz0Q7kNvwELWVnN&_nc_oc=AdmWUfbpspk99w1vhlmcQM5Tc3BjXJQDZPc4rghiW-cpAsLAPnnp_QgbcF-fawRD3Nc8Fg_IUWsd55dTUqcWskgu&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=2Uzl5AEDdfacGm3_QZ_8Sw&oh=00_AfjOkGD55xKOiz8k13xvXC4BaLYLsOnbnWKIyw_Lfq_lIQ&oe=691A5AC3"
+                        imageUrl="/images/waterfront.jpg"
                     />
                 </div>
             </div>

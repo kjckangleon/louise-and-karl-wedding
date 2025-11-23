@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const ColorSwatch: React.FC<{ color: string, name: string }> = ({ color, name }) => (
   <div className="flex flex-col items-center">
     <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-4 border-white`} style={{ backgroundColor: color }}></div>
@@ -25,7 +26,7 @@ export const DressCodeSection: React.FC = () => {
         <div className="mb-10 grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             <div>
               <img 
-                src="https://i.pinimg.com/736x/0f/b6/3c/0fb63c5f5d55c89b57b3e40b454f8a88.jpg" 
+                src="/images/ladies-attire.jpg" 
                 alt="Women's Attire Moodboard" 
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
@@ -33,7 +34,7 @@ export const DressCodeSection: React.FC = () => {
             </div>
             <div>
               <img 
-                src="https://i.pinimg.com/736x/15/d4/f5/15d4f56ac02a3487ad52686a90c5b53e.jpg" 
+                src="/images/mens-attire.jpg" 
                 alt="Men's Attire Moodboard" 
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />

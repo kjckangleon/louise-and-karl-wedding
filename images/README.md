@@ -1,16 +1,20 @@
 # Images Directory
 
-This folder is for storing your local images (photos, icons, backgrounds).
+This folder is for storing your local images.
 
-## How to use
+## Required Files
 
-1.  Add your image files (e.g., `my-photo.jpg`) to this folder.
-2.  Import them in your React components:
+Please save the images you uploaded with these specific filenames for the website to display them correctly:
 
-```tsx
-// Example import
-import myPhoto from '../images/my-photo.jpg';
+1.  `waterfront.jpg` - The photo of the Waterfront Hotel (Reception).
+2.  `ladies-attire.jpg` - The collage of ladies' dresses.
+3.  `mens-attire.jpg` - The collage of men's attire.
 
-// Example usage in JSX
-<img src={myPhoto} alt="Description" />
-```
+## How to use in code
+
+When using these images in your components, you can reference them relative to the root if your build tool allows (like Vite serving root), or import them.
+
+Currently configured to load from:
+- `/images/waterfront.jpg`
+- `/images/ladies-attire.jpg`
+- `/images/mens-attire.jpg`
