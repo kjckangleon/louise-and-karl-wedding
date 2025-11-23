@@ -1,5 +1,7 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+const LOCAL_STORAGE_KEY = 'rsvp_submitted_karl_louise';
 
 // Using a separate component for the form itself to encapsulate state
 const RSVPForm: React.FC = () => {
@@ -12,6 +14,14 @@ const RSVPForm: React.FC = () => {
     message: "",
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [hasSubmitted, setHasSubmitted] = useState(false);
+
+  useEffect(() => {
+    const submitted = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if (submitted) {
+      setHasSubmitted(true);
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -26,7 +36,7 @@ const RSVPForm: React.FC = () => {
 
     const data = new FormData();
     
-    // Send only the user-visible fields, as the hidden validation fields were causing errors.
+    // Send only the user-visible fields
     data.append("entry.1498135098", form.name);
     data.append("entry.44151106", form.email);
     data.append("entry.180535622", form.contact);
@@ -42,6 +52,9 @@ const RSVPForm: React.FC = () => {
       });
 
       setStatus("success");
+      localStorage.setItem(LOCAL_STORAGE_KEY, 'true');
+      setHasSubmitted(true);
+
       setForm({
         name: "",
         email: "",
@@ -58,6 +71,33 @@ const RSVPForm: React.FC = () => {
     }
   };
 
+  const handleSubmitAgain = () => {
+    setHasSubmitted(false);
+    // We don't clear localStorage here so that if they refresh, it remembers they submitted before.
+    // Only this session allows a new submission.
+  };
+
+  if (hasSubmitted && status === 'idle') {
+    return (
+      <div className="bg-white/60 backdrop-blur-sm p-8 md:p-10 rounded-2xl shadow-xl max-w-2xl w-full text-center border border-gray-200 flex flex-col items-center animate-fade-in">
+        <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+        <h3 className="text-2xl md:text-3xl font-serif text-[#6D4C41] mb-4">You're on the list!</h3>
+        <p className="text-gray-600 mb-8 max-w-md text-lg">
+            You have already submitted an RSVP. Do you want to submit again?
+        </p>
+        <button
+            onClick={handleSubmitAgain}
+            className="px-8 py-3 bg-[#F0B429] text-[#6D4C41] font-semibold rounded-full shadow-lg hover:bg-[#D4A225] transition-transform transform hover:scale-105 duration-300"
+        >
+            Submit Another Response
+        </button>
+      </div>
+    );
+  }
 
   return (
     <form
