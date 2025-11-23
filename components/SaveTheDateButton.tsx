@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { WEDDING_DATE, GROOM_NAME, BRIDE_NAME } from '../constants';
 
@@ -43,7 +44,7 @@ export const SaveTheDateButton: React.FC = () => {
             href={generateGoogleCalendarUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center px-8 py-3 bg-[#F0B429] text-[#6D4C41] font-semibold rounded-full shadow-lg hover:bg-[#D4A225] transition-transform transform hover:scale-105 duration-300"
+            className="mt-6 inline-flex items-center px-8 py-3 bg-[#F0B429] text-[#6D4C41] font-semibold rounded-full shadow-lg hover:bg-[#D4A225] transition-transform transform hover:scale-105 duration-300"
         >
             <CalendarIcon />
             Save the Date
