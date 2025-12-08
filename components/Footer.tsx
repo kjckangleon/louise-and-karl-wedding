@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
                 <h2 className="text-3xl font-serif mb-2">Thank You</h2>
                 <p className="mb-4">We can't wait to celebrate with you!</p>
                 <p className="text-4xl font-serif text-amber-100">{`${GROOM_FIRST_NAME} & ${BRIDE_FIRST_NAME}`}</p>
-                 <p className="text-sm text-gray-300 mt-8">&copy; ${new Date().getFullYear()} {`${GROOM_NAME} & ${BRIDE_NAME}`}. All Rights Reserved.</p>
+                 <p className="text-sm text-gray-300 mt-8">&copy; {new Date().getFullYear()} {`${GROOM_NAME} & ${BRIDE_NAME}`}. All Rights Reserved.</p>
             </div>
         </footer>
     );
