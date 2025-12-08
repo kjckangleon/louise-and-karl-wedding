@@ -24,7 +24,7 @@ export const PARENTS = {
   }
 };
 
-export const PRINCIPAL_SPONSORS = {
+export const PRINCIPAL_SPONSORS = { //backup
   male: [
     "Lilio F. Kangleon",
     "Dr. Rolex C. Omega",
@@ -43,6 +43,27 @@ export const PRINCIPAL_SPONSORS = {
     "Imelda P. Laping",
     "Venus M. Jumoad",
     "Jenice P. Gelig",
+    "Maribel Tan-Escario"
+  ]
+};
+
+export const PRINCIPAL_SPONSORS_PAIR = {
+  all: [
+    "Lilio F. Kangleon",
+    "Maryann K. Espina",
+    "Dr. Rolex C. Omega",
+    "Christina M. Obico",
+    "Florencio T. Espantaleon",
+    "Elena A. Espantaleon",
+    "Victor G. Cabral",
+    "Ma. Emma A. Cabral",
+    "Javier I. Laping",
+    "Imelda P. Laping",
+    "Marvin Lemuel V. Jumoad",
+    "Venus M. Jumoad",
+    "Julian Jr. D. Gelig",
+    "Jenice P. Gelig",
+    "Jude Clint Escario",
     "Maribel Tan-Escario"
   ]
 };
@@ -71,17 +92,17 @@ export const BRIDESMAIDS = [
   "Dianne Faye B. Belista",
   "Ma. Cyrel C. Magno",
   "Sienna April B. Gabronino",
-  "Cherry A. Estillo",
+  "Cherry A. Estilo",
   "Joanna June A. Barrios",
   "Carl L. Dabon"
 ];
 
 export const CEREMONIAL_ROLES = {
-  rings: "Zaijan A. Lucero",
+  rings: "Zaijan Benedict A. Lucero",
   arrhae: "Caleb Iñaki K. Amante",
 };
 
 export const OFFERTORY = {
   breadAndWine: ["Jesse Rey E. Amante", "Shalimar Ann K. Amante"],
-  candle: ["Lou Rheilyn L. Songahid","Patrick A. Songahid"]
+  candle: ["Patrick A. Songahid", "Lou Rheilyn L. Songahid"]
 };

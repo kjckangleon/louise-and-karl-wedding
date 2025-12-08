@@ -14,7 +14,7 @@ export const DressCodeSection: React.FC = () => {
     { name: 'butter yellow', hex: '#FCE883' },
     { name: 'cream', hex: '#FCECD4' },
     { name: 'brown', hex: '#5D4037' },
-    { name: 'forest green', hex: '#228B22' },
+    { name: 'dark green', hex: '#006400' },
   ];
 
   return (
