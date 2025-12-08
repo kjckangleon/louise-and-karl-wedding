@@ -12,7 +12,7 @@ const ColorSwatch: React.FC<{ color: string, name: string }> = ({ color, name })
 export const DressCodeSection: React.FC = () => {
   const colors = [
     { name: 'butter yellow', hex: '#FCE883' },
-    { name: 'cream', hex: '#FFFDD0' },
+    { name: 'cream', hex: '#FCECD4' },
     { name: 'brown', hex: '#5D4037' },
     { name: 'forest green', hex: '#228B22' },
   ];

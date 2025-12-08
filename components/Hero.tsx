@@ -48,7 +48,7 @@ export const Hero: React.FC = () => {
       return <p className="text-lg md:text-xl font-light mt-4">Today is the day!</p>;
     }
     
-    return null; // Don't show anything if wedding has passed
+    return null;
   };
 
   return (

@@ -66,18 +66,15 @@ export const EntourageSection: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <div>
                     <p className="text-gray-500 text-lg mb-1">Candle</p>
-                    <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(SECONDARY_SPONSORS.candle[0])}</p>
-                    <p className="text-gray-600 text-md">{SECONDARY_SPONSORS.candle.join(' & ')}</p>
+                    <p className="font-semibold text-lg text-gray-800">{SECONDARY_SPONSORS.candle.join(' & ')}</p>
                 </div>
                 <div>
                     <p className="text-gray-500 text-lg mb-1">Veil</p>
-                    <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(SECONDARY_SPONSORS.veil[0])}</p>
-                    <p className="text-gray-600 text-md">{SECONDARY_SPONSORS.veil.join(' & ')}</p>
+                    <p className="font-semibold text-lg text-gray-800">{SECONDARY_SPONSORS.veil.join(' & ')}</p>
                 </div>
                 <div>
                     <p className="text-gray-500 text-lg mb-1">Cord</p>
-                    <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(SECONDARY_SPONSORS.cord[0])}</p>
-                    <p className="text-gray-600 text-md">{SECONDARY_SPONSORS.cord.join(' & ')}</p>
+                    <p className="font-semibold text-lg text-gray-800">{SECONDARY_SPONSORS.cord.join(' & ')}</p>
                 </div>
             </div>
         </div>
@@ -101,7 +98,7 @@ export const EntourageSection: React.FC = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-6">
                 {attendantsOfHonor.map((person, index) => (
                     <div key={index}>
-                        <p className="font-semibold text-lg text-gray-800">{person.name}</p>
+                        <p className="text-xs sm:text-sm md:text-lg text-gray-700">{person.name}</p>
                     </div>
                 ))}
             </div>
@@ -114,12 +111,12 @@ export const EntourageSection: React.FC = () => {
                     <h4 className="text-xl font-semibold text-gray-600 mb-4">With Special Participation</h4>
                     <div className="space-y-3">
                         <div>
-                            <p className="font-semibold text-lg text-gray-800">{CEREMONIAL_ROLES.rings}</p>
                             <p className="text-gray-500">Ring Bearer</p>
+                            <p className="font-semibold text-lg text-gray-800">{CEREMONIAL_ROLES.rings}</p>
                         </div>
                         <div>
-                            <p className="font-semibold text-lg text-gray-800">{CEREMONIAL_ROLES.arrhae}</p>
                             <p className="text-gray-500">Arrhae Bearer</p>
+                            <p className="font-semibold text-lg text-gray-800">{CEREMONIAL_ROLES.arrhae}</p>
                         </div>
                     </div>
                 </div>
@@ -128,13 +125,11 @@ export const EntourageSection: React.FC = () => {
                     <div className="space-y-6">
                         <div>
                             <p className="text-gray-500 text-lg mb-1">Bread & Wine</p>
-                            <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(OFFERTORY.breadAndWine[0])}</p>
-                            <p className="text-gray-600 text-md">{OFFERTORY.breadAndWine.join(' & ')}</p>
+                            <p className="font-semibold text-lg text-gray-800">{OFFERTORY.breadAndWine.join(' & ')}</p>
                         </div>
                         <div>
                             <p className="text-gray-500 text-lg mb-1">Candle</p>
-                            <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(OFFERTORY.candle[0])}</p>
-                            <p className="text-gray-600 text-md">{OFFERTORY.candle.join(' & ')}</p>
+                            <p className="font-semibold text-lg text-gray-800">{OFFERTORY.candle.join(' & ')}</p>
                         </div>
                     </div>
                 </div>
