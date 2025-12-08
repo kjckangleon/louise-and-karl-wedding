@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const MapPinIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 mr-3 text-[#F0B429]"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>;
@@ -34,7 +35,7 @@ export const EventDetailsSection: React.FC = () => {
                     <DetailCard
                         title="The Ceremony"
                         subtitle="Cebu Metropolitan Cathedral"
-                        time="2:30 PM - 3:30 PM"
+                        time="2:00 PM - 3:30 PM"
                         address="Cebu Metropolitan Cathedral, Cebu City, Philippines"
                         mapLink="https://www.google.com/maps/search/?api=1&query=Cebu+Metropolitan+Cathedral"
                         imageUrl="https://scontent.fceb6-3.fna.fbcdn.net/v/t1.6435-9/90183989_109017267396167_4811073956679254016_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeE1zjjnDLQ8S7O0RSzeS902J3wu_qdm2xMnfC7-p2bbE58GHhjpkPcjYjCF4HapFso&_nc_ohc=s1CzMWiiCygQ7kNvwFZqjx5&_nc_oc=Adl7pKqInsziOOPoZICIgMhS6rfrvqG56770TAodyitiIU9V1R0qsBmCc3prq7DtOpbQslDxeDWu3JphYK5m3Bbe&_nc_zt=23&_nc_ht=scontent.fceb6-3.fna&_nc_gid=Q4duLrGbZ-JQYPPl2AKwxg&oh=00_AfgV5V5ObZXPFT5BR9Aaj17ewihUVtNyfQu-Vidv8PzyCg&oe=693C0FAC"
@@ -45,7 +46,7 @@ export const EventDetailsSection: React.FC = () => {
                         time="5:30 PM onwards"
                         address="Salinas Drive, Lahug, Cebu City, 6000 Cebu"
                         mapLink="https://www.google.com/maps/search/?api=1&query=Waterfront+Cebu+City+Hotel+%26+Casino"
-                        imageUrl="/images/waterfront.jpg"
+                        imageUrl={new URL('../images/waterfront.jpg', import.meta.url).href}
                     />
                 </div>
             </div>

@@ -9,7 +9,7 @@ export const GiftRegistrySection: React.FC = () => {
         <GiftIcon />
         <h2 className="text-4xl md:text-5xl font-serif mb-4 text-[#6D4C41]">Gift Registry</h2>
         <p className="text-gray-600 leading-relaxed">
-          Your presence at our wedding is the greatest gift of all. However, should you wish to honour us with a gift, a monetary contribution towards our future together would be sincerely appreciated. A wishing well will be available at the reception for your convenience.
+          Your presence at our wedding is the greatest gift of all. However, should you wish to honour us with a gift, a monetary contribution towards our future together would be sincerely appreciated.
         </p>
       </div>
     </section>

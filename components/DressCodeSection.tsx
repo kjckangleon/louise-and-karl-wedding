@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 
@@ -10,11 +11,10 @@ const ColorSwatch: React.FC<{ color: string, name: string }> = ({ color, name })
 
 export const DressCodeSection: React.FC = () => {
   const colors = [
-    { name: 'sunflower yellow', hex: '#F0B429' },
-    { name: 'dark brown', hex: '#6D4C41' },
-    { name: 'tan', hex: '#D2B48C' },
-    { name: 'light brown', hex: '#A1887F' },
-    { name: 'cream', hex: '#EAE0D5' },
+    { name: 'butter yellow', hex: '#FCE883' },
+    { name: 'cream', hex: '#FFFDD0' },
+    { name: 'brown', hex: '#5D4037' },
+    { name: 'forest green', hex: '#228B22' },
   ];
 
   return (
@@ -26,7 +26,7 @@ export const DressCodeSection: React.FC = () => {
         <div className="mb-10 grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             <div>
               <img 
-                src="/images/ladies-attire.jpg" 
+                src={new URL('../images/ladies-attire.jpg', import.meta.url).href}
                 alt="Women's Attire Moodboard" 
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
@@ -34,7 +34,7 @@ export const DressCodeSection: React.FC = () => {
             </div>
             <div>
               <img 
-                src="/images/mens-attire.jpg" 
+                src={new URL('../images/mens-attire.jpg', import.meta.url).href} 
                 alt="Men's Attire Moodboard" 
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />

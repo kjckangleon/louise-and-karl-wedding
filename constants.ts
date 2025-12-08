@@ -3,8 +3,6 @@ export const GROOM_NAME = 'Karl Joseph C. Kangleon';
 export const BRIDE_NAME = 'Louise Jane A. Lucero';
 export const GROOM_FIRST_NAME = 'Karl';
 export const BRIDE_FIRST_NAME = 'Louise';
-export const GROOM_LAST_NAME = 'Kangleon';
-export const BRIDE_LAST_NAME = 'Lucero';
 
 export const SECTIONS = [
   { id: 'our-story', title: 'Our Story' },

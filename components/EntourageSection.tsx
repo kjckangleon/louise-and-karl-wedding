@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { 
     PARENTS,
@@ -66,19 +65,19 @@ export const EntourageSection: React.FC = () => {
             <h3 className="text-3xl font-serif text-gray-800 mb-8">Secondary Sponsors</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <div>
+                    <p className="text-gray-500 text-lg mb-1">Candle</p>
                     <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(SECONDARY_SPONSORS.candle[0])}</p>
                     <p className="text-gray-600 text-md">{SECONDARY_SPONSORS.candle.join(' & ')}</p>
-                    <p className="text-gray-500 text-lg mt-1">Candle</p>
                 </div>
                 <div>
+                    <p className="text-gray-500 text-lg mb-1">Veil</p>
                     <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(SECONDARY_SPONSORS.veil[0])}</p>
                     <p className="text-gray-600 text-md">{SECONDARY_SPONSORS.veil.join(' & ')}</p>
-                    <p className="text-gray-500 text-lg mt-1">Veil</p>
                 </div>
                 <div>
+                    <p className="text-gray-500 text-lg mb-1">Cord</p>
                     <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(SECONDARY_SPONSORS.cord[0])}</p>
                     <p className="text-gray-600 text-md">{SECONDARY_SPONSORS.cord.join(' & ')}</p>
-                    <p className="text-gray-500 text-lg mt-1">Cord</p>
                 </div>
             </div>
         </div>
@@ -103,7 +102,6 @@ export const EntourageSection: React.FC = () => {
                 {attendantsOfHonor.map((person, index) => (
                     <div key={index}>
                         <p className="font-semibold text-lg text-gray-800">{person.name}</p>
-                        <p className="text-gray-500">{person.role}</p>
                     </div>
                 ))}
             </div>
@@ -127,16 +125,16 @@ export const EntourageSection: React.FC = () => {
                 </div>
                  <div>
                     <h4 className="text-xl font-semibold text-gray-600 mb-4">Offertory</h4>
-                    <div className="space-y-3">
+                    <div className="space-y-6">
                         <div>
+                            <p className="text-gray-500 text-lg mb-1">Bread & Wine</p>
                             <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(OFFERTORY.breadAndWine[0])}</p>
                             <p className="text-gray-600 text-md">{OFFERTORY.breadAndWine.join(' & ')}</p>
-                             <p className="text-gray-500 text-lg mt-1">Bread & Wine</p>
                         </div>
                         <div>
+                            <p className="text-gray-500 text-lg mb-1">Candle</p>
                             <p className="font-semibold text-lg text-gray-800">Mr. & Mrs. {getLastName(OFFERTORY.candle[0])}</p>
                             <p className="text-gray-600 text-md">{OFFERTORY.candle.join(' & ')}</p>
-                             <p className="text-gray-500 text-lg mt-1">Candle</p>
                         </div>
                     </div>
                 </div>
