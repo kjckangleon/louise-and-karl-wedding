@@ -71,7 +71,7 @@ export const BRIDESMAIDS = [
   "Dianne Faye B. Belista",
   "Ma. Cyrel C. Magno",
   "Sienna April B. Gabronino",
-  "Cherry A. Arabejo",
+  "Cherry A. Estillo",
   "Joanna June A. Barrios",
   "Carl L. Dabon"
 ];
