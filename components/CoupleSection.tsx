@@ -16,7 +16,7 @@ export const CoupleSection: React.FC = () => {
   return (
     <SectionWrapper id="our-story" title="Our Story">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="relative h-96 lg:h-[500px] rounded-lg shadow-xl overflow-hidden group">
+        <div className="relative rounded-lg shadow-xl overflow-hidden group">
           <img src="https://lh3.googleusercontent.com/pw/AP1GczNLo2DqlNrpA_6r11rm9ydpUZt6HHTGEtdc4wipgr9ut84V6HfK0MsPYCn33E0vNiRzANju_EUNv3uT7RJV_RIL7l-olHoB139bBk5EYQA3odFbpfcShC6pGxM-Ia6BTdsC68h92XPb6CgO36b-B01CTA=w971-h1295-s-no-gm?authuser=0" alt="The Couple" className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent"></div>
         </div>
