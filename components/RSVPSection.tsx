@@ -199,7 +199,8 @@ export const RSVPSection: React.FC = () => {
     <section id="rsvp" className="py-20 md:py-28">
       <div className="container mx-auto px-6 flex flex-col items-center">
         <h2 className="text-4xl md:text-5xl font-serif text-center mb-4 text-[#6D4C41]">Kindly Respond</h2>
-        <p className="text-center text-gray-600 mb-10 max-w-2xl">Please let us know if you can make it by January 6, 2026. We can't wait to celebrate with you!</p>
+        <p className="text-center text-gray-600 mb-5 max-w-2xl">Please let us know if you can make it by January 6, 2026. We can't wait to celebrate with you!</p>
+        <p className="text-center text-gray-600 mb-10 max-w-2xl">We adore your little ones. For our wedding day, we hope you understand that we’re keeping our wedding an adults-only celebration.</p>
         <RSVPForm />
       </div>
     </section>
