@@ -18,3 +18,4 @@ Currently configured to load from:
 - `/images/waterfront.jpg`
 - `/images/ladies-attire.jpg`
 - `/images/mens-attire.jpg`
+
