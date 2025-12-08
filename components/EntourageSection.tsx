@@ -65,16 +65,19 @@ export const EntourageSection: React.FC = () => {
             <h3 className="text-3xl font-serif text-gray-800 mb-8">Secondary Sponsors</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <div>
-                    <p className="text-gray-500 text-lg mb-1">Candle</p>
-                    <p className="font-semibold text-lg text-gray-800">{SECONDARY_SPONSORS.candle.join(' & ')}</p>
+                    <p className="font-semibold text-lg mb-1">Candle</p>
+                    <p className="text-lg text-gray-500">{SECONDARY_SPONSORS.candle[0]}</p>
+                    <p className="text-lg text-gray-500">{SECONDARY_SPONSORS.candle[1]}</p>
                 </div>
                 <div>
-                    <p className="text-gray-500 text-lg mb-1">Veil</p>
-                    <p className="font-semibold text-lg text-gray-800">{SECONDARY_SPONSORS.veil.join(' & ')}</p>
+                    <p className="font-semibold text-lg mb-1">Veil</p>
+                    <p className="text-lg text-gray-500">{SECONDARY_SPONSORS.veil[0]}</p>
+                    <p className="text-lg text-gray-500">{SECONDARY_SPONSORS.veil[1]}</p>
                 </div>
                 <div>
-                    <p className="text-gray-500 text-lg mb-1">Cord</p>
-                    <p className="font-semibold text-lg text-gray-800">{SECONDARY_SPONSORS.cord.join(' & ')}</p>
+                    <p className="font-semibold text-lg mb-1">Cord</p>
+                    <p className="text-lg text-gray-500">{SECONDARY_SPONSORS.cord[0]}</p>
+                    <p className="text-lg text-gray-500">{SECONDARY_SPONSORS.cord[1]}</p>
                 </div>
             </div>
         </div>

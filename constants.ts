@@ -48,9 +48,9 @@ export const PRINCIPAL_SPONSORS = {
 };
 
 export const SECONDARY_SPONSORS = {
-  cord: ["Marites L. Cañizares", "Lemuel S. Cañizares"],
+  cord: ["Lemuel S. Cañizares", "Marites L. Cañizares"],
   veil: ["William M. Orosio", "Gina G. Orosio"],
-  candle: ["Yasmeen Sydney K. Cutara", "Raphael Gabriel Y. Cutara"]
+  candle: ["Raphael Gabriel Y. Cutara", "Yasmeen Sydney K. Cutara"]
 };
 
 export const BEST_WOMAN = "Jannielou C. Kangleon";
