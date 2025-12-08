@@ -23,7 +23,7 @@ export const CoupleSection: React.FC = () => {
         <div className="text-center lg:text-left">
           <h3 className="text-3xl font-serif text-gray-700 mb-4">{`${GROOM_FIRST_NAME} & ${BRIDE_FIRST_NAME}`}</h3>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Our journey began on a crisp autumn day, a chance meeting that felt like destiny. Through shared laughter, quiet moments, and countless adventures, our friendship blossomed into a deep and unwavering love. We discovered that home wasn't a place, but a feeling we found in each other.
+            Through shared laughter, quiet moments, and countless adventures, our friendship blossomed into a deep and unwavering love. We discovered that home wasn't a place, but a feeling we found in each other.
           </p>
           <p className="text-gray-600 leading-relaxed">
             Now, we're taking the next step in our beautiful journey together. We are overjoyed to invite you to witness our union and celebrate the beginning of our forever. Your presence will make our special day complete.
