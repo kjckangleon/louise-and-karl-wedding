@@ -82,7 +82,6 @@ export const GROOMSMEN = [
   "Paulo Anthony A. Espantaleon",
   "Merthon Monico C. Arante",
   "James Joseph C. Arante",
-  "Roselle Victor C. Lague",
   "Paul Benedict I. Jabines",
   "Emmanuel Mark Kangleon"
 ];
