@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('https://lh3.googleusercontent.com/pw/AP1GczM5rmEaDSUPxbJ_rVn_0NzQYkCww5r4fpFzLY0RNeHprx5QWVCNAmK3KQ6xJsLCkr7JB5TROn1OLqRODalzxBYQ1KUqFKLBisvbw8vDLsm3Ni512pYErOC8rQJ7uG1ss3x0dcpXG_FDLqgaNq-AmeFe3w=w2266-h1295-s-no-gm')` }}>
+    <section id="home" className="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center bg-fixed" style={{ backgroundImage: `url(${new URL('../images/banner.jpg', import.meta.url).href})` }}>
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10 p-6 flex flex-col items-center">
         <h2 className="text-lg md:text-2xl font-light tracking-widest uppercase">
