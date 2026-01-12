@@ -140,9 +140,9 @@ export const EntourageSection: React.FC = () => {
                             <p className="text-lg text-gray-500">{OFFERTORY.breadAndWine[1]}</p>
                         </div>
                         <div>
-                            <p className="font-semibold text-lg mb-1">Candle</p>
-                            <p className="text-lg text-gray-500">{OFFERTORY.candle[0]}</p>
-                            <p className="text-lg text-gray-500">{OFFERTORY.candle[1]}</p>
+                            <p className="font-semibold text-lg mb-1">Fruits</p>
+                            <p className="text-lg text-gray-500">{OFFERTORY.fuirstAndGifts2[0]}</p>
+                            <p className="text-lg text-gray-500">{OFFERTORY.fuirstAndGifts2[1]}</p>
                         </div>
                         <div>
                             <p className="font-semibold text-lg mb-1">Fruits / Gifts</p>

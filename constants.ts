@@ -103,6 +103,6 @@ export const CEREMONIAL_ROLES = {
 
 export const OFFERTORY = {
   breadAndWine: ["Jesse Rey E. Amante", "Shalimar Ann K. Amante"],
-  candle: ["Patrick A. Songahid", "Lou Rheilyn L. Songahid"],
+  fuirstAndGifts2: ["Patrick A. Songahid", "Lou Rheilyn L. Songahid"],
   fruitsAndGifts: ['Cesar Rojo Jr.',"Analyn Rojo","Rogelio Dabon","Valentine L. Dabon"]
 };
