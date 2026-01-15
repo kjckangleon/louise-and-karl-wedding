@@ -9,6 +9,7 @@ import { GiftRegistrySection } from './components/GiftRegistrySection';
 import { RSVPSection } from './components/RSVPSection';
 import { EntourageSection } from './components/EntourageSection';
 import { Footer } from './components/Footer';
+import WeddingAppreciationWallSection from './components/AppreciationSection';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <GiftRegistrySection />
         <RSVPSection />
         <EntourageSection />
+        <WeddingAppreciationWallSection />
       </main>
       <Footer />
     </div>
