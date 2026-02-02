@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <EventDetailsSection />
         <DressCodeSection />
         <GiftRegistrySection />
-        <RSVPSection />
+        {/* <RSVPSection /> */} 
         <EntourageSection />
         <WeddingAppreciationWallSection />
       </main>

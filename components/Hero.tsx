@@ -67,10 +67,10 @@ export const Hero: React.FC = () => {
         {renderCountdown()}
         
         <a 
-          href="#rsvp" 
+          href="https://whereismyseat.vercel.app/" 
           className="mt-8 px-10 py-4 bg-white text-[#6D4C41] font-bold text-lg rounded-full shadow-2xl hover:bg-gray-100 transition-all transform hover:scale-105 duration-300 animate-bounce hover:animate-none"
         >
-          RSVP NOW
+          Find your seats now!
         </a>
 
         <SaveTheDateButton />
